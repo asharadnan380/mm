@@ -52,17 +52,19 @@ body {
 }
 
 .image-section img {
+    display: block;
+    margin: 20px auto; /* centers the image */
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    margin: 20px 0;
     transition: transform 0.3s ease;
 }
 
 .image-section img:hover {
     transform: scale(1.02);
 }
+
 
 h1 {
     font-size: 2.2rem;
