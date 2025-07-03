@@ -16,7 +16,7 @@ toastr.options = {
 // Load common elements dynamically
 function loadCommonElements() {
     // Load header
-    fetch('templates/header.html')
+    fetch('/p/templates/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('dynamic-header').innerHTML = data;
@@ -25,7 +25,7 @@ function loadCommonElements() {
         .catch(error => console.error('Error loading header:', error));
 
     // Load footer
-    fetch('templates/footer.html')
+    fetch('/p/templates/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('dynamic-footer').innerHTML = data;
@@ -34,7 +34,7 @@ function loadCommonElements() {
         .catch(error => console.error('Error loading footer:', error));
 
     // Load dynamic message
-    fetch('templates/message.html')
+    fetch('/p/templates/message.html')
         .then(response => response.text())
         .then(data => {
             const messageContainer = document.getElementById('dynamic-message');
