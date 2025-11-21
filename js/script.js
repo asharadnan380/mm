@@ -6026,14 +6026,14 @@ function openPost(post) {
             .replace(/-$/, '');
             
         // Determine which server to use based on which array the post belongs to
-        let serverUrl = "http://www.moviehai.icu/p/";
-        if (allPosts2.includes(post)) serverUrl = "http://p2.moviehai.icu/p/";
-        else if (allPosts3.includes(post)) serverUrl = "http://p3.moviehai.icu/p/";
-        else if (allPosts4.includes(post)) serverUrl = "http://p4.moviehai.icu/p/";
-        else if (allPosts5.includes(post)) serverUrl = "http://p5.moviehai.icu/p/";
-        else if (allPosts6.includes(post)) serverUrl = "http://p6.moviehai.icu/p/";
-        else if (allPosts7.includes(post)) serverUrl = "http://p7.moviehai.icu/p/";
-        else if (allPosts8.includes(post)) serverUrl = "http://p8.moviehai.icu/p/";
+        let serverUrl = "https://www.moviehai.icu/p/";
+        if (allPosts2.includes(post)) serverUrl = "https://p2.moviehai.icu/p/";
+        else if (allPosts3.includes(post)) serverUrl = "https://p3.moviehai.icu/p/";
+        else if (allPosts4.includes(post)) serverUrl = "https://p4.moviehai.icu/p/";
+        else if (allPosts5.includes(post)) serverUrl = "https://p5.moviehai.icu/p/";
+        else if (allPosts6.includes(post)) serverUrl = "https://p6.moviehai.icu/p/";
+        else if (allPosts7.includes(post)) serverUrl = "https://p7.moviehai.icu/p/";
+        else if (allPosts8.includes(post)) serverUrl = "https://p8.moviehai.icu/p/";
             
         window.open(`${serverUrl}${formattedTitle}.html`, '_blank');
         
@@ -6102,3 +6102,4 @@ lightbox.option({
 
 // Start the application
 init();
+
